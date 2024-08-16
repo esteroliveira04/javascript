@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Informe seu país de origem:</h1>
-    <input type="text" name="tpais" id="tpais">
+    <input type="text" name="tpais" id="idpais">
     <input type="button" value="Informar" onclick="mostrar()">
     <div id="tres">
 
@@ -15,13 +15,12 @@
 
     <script>
         function mostrar(){
-            var pais = document.getElementById('tpais')
+            var pais = document.getElementById('idpais')
             var res = document.getElementById('tres')
-            if (pais == 'brasil'){
-                res.innerHTML = 'BRASILEIRO'
-            } 
-            else {
-                res.innerHTML = 'ESTRANGEIRO'
+            if (pais.value == 'brasil'){
+                res.innerHTML = 'brasileiro'
+            } else {
+                res.innerHTML = 'estrangeiro'
             }
          
         }
